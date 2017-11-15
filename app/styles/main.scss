@@ -1,0 +1,33 @@
+// bower:scss
+// endbower
+@import '01-settings/01-fonts';
+@import '01-settings/02-base.settings';
+@import '01-settings/03-colors';
+
+/******************
+*   Tools         *
+/******************/
+
+@import '02-tools/functions.generic'; // Functions
+
+/******************
+*   Generics      *
+/******************/
+
+@import '04-generics/document';
+@import '05-components/01-typography';
+@import '05-components/02-colors';
+@import '05-components/03-button';
+.ssg-item {
+    .sample {
+        div[class^="bg"] {
+            width: 200px;
+            height: 2em;
+            display: inline-block;
+            & + &{
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

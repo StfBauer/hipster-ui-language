@@ -1,0 +1,20 @@
+/*** Font ***/
+@each $font in $fontSizes{
+    .font-#{nth($font, 1)}{
+        font-size: fontSize(nth($font, 2));
+        font-weight: nth($font, 3);
+    };
+}
+/*** Font Size **/
+@each $font in $fontSizes{
+    .fontSize-#{nth($font, 1)}{
+        font-size: fontSize(nth($font, 2));
+    };
+}
+
+/*** Font Size **/
+@each $fontWeight in $fontWeight{
+    .fontWeight-#{nth($fontWeight, 1)}{
+        font-weight: nth($fontWeight, 2);
+    };
+}

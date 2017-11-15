@@ -1,0 +1,41 @@
+@mixin buttonDisabled(){
+    &[disabled]{
+        color: theme(neutralTertiary);
+        background-color: theme(neutralLighter);
+        &:hover{
+            cursor: not-allowed;
+            color: theme(neutralTertiary);
+            background-color: theme(neutralLighter);
+        }
+    }
+}
+
+.button{
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+    font-size: defFontSize();
+    text-decoration: none;
+    /*** Colors ***/
+    color: theme(neutralPrimary);
+    background-color: theme(neutralLighter);
+    /*** Colors ***/
+    &:hover{
+        cursor: pointer;
+        background-color: theme(neutralLight);
+        color: theme(black);
+    }
+    @include buttonDisabled();
+}
+
+.button-prim{
+    @extend .button;
+    color: theme(white);
+    background-color: theme(themePrimary);
+    &:hover{
+        color: theme(white);
+        background-color: theme(themeDark);
+    }
+    @include buttonDisabled();
+}

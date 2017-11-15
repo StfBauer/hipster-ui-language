@@ -1,0 +1,56 @@
+{
+    "patterns": [
+        {
+            "title": "Background Color Class Name",
+            "description": "",
+            "filename": "00-background-colors",
+            "filepath": "atoms/00-background-colors.hbs"
+        },
+        {
+            "title": "buttons",
+            "description": "",
+            "filename": "04-buttons",
+            "filepath": "atoms/04-buttons.hbs"
+        },
+        {
+            "title": "Text Color Class Names",
+            "description": "",
+            "filename": "00-colors",
+            "filepath": "atoms/00-colors.hbs"
+        },
+        {
+            "title": "Typography Design",
+            "description": "",
+            "filename": "01-font",
+            "filepath": "atoms/01-font.hbs"
+        },
+        {
+            "title": "Headlines",
+            "description": "",
+            "filename": "02-headlines",
+            "filepath": "atoms/02-headlines.hbs"
+        }
+    ],
+    "folder": [
+        {
+            "name": "atoms",
+            "description": "Contains all atom elements"
+        },
+        {
+            "name": "molecules",
+            "description": "Contains all molecule elements"
+        },
+        {
+            "name": "organism",
+            "description": "Contains all organism elements"
+        },
+        {
+            "name": "templates",
+            "description": "Contains all templates elements"
+        },
+        {
+            "name": "pages",
+            "description": "Contains all pages elements"
+        }
+    ]
+}

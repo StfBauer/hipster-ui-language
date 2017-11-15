@@ -1,0 +1,13 @@
+$i: 0;
+
+@each $themeKey in map-keys($themeColors){
+    $test: map-get($themeColors, $themeKey);
+    $i: $i+1;
+
+    .bgcolor-#{$themeKey}{
+        background-color: $test;
+    }
+    .textcolor-#{$themeKey}{
+        color: $test;
+    }
+}
