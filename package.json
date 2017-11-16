@@ -1,70 +1,76 @@
 {
-    "name": "simplestyle",
-    "version": "0.0.1",
-    "description": "Simple Style Guide Tool based on Atomic Web Design",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "postinstall": "gulp gen:config"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/StfBauer/SimpleStyle.git"
-    },
-    "keywords": [
-        "Atomic",
-        "Design",
-        "Style",
-        "Guide",
-        "Web",
-        "Desgin",
-        "Pattern",
-        "UI",
-        "UX"
-    ],
-    "author": "Stefan Bauer",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/StfBauer/SimpleStyle/issues"
-    },
-    "homepage": "https://github.com/StfBauer/SimpleStyle#readme",
-    "devDependencies": {
-        "browser-sync": "^2.10.1",
-        "chalk": "^2.3.0",
-        "del": "^3.0.0",
-        "gulp": "^3.9.0",
-        "gulp-autoprefixer": "^4.0.0",
-        "gulp-concat": "^2.6.0",
-        "gulp-declare": "^0.3.0",
-        "gulp-handlebars": "^4.0.0",
-        "gulp-if": "^2.0.0",
-        "gulp-inject": "^4.1.0",
-        "gulp-jscs": "^4.0.0",
-        "gulp-jshint": "^2.0.0",
-        "gulp-load-plugins": "^1.1.0",
-        "gulp-merge": "^0.1.1",
-        "gulp-plumber": "^1.0.1",
-        "gulp-print": "^2.0.1",
-        "gulp-rename": "^1.2.2",
-        "gulp-sass": "^3.1.0",
-        "gulp-sourcemaps": "^2.2.0",
-        "gulp-util": "^3.0.7",
-        "gulp-watch": "^4.3.5",
-        "gulp-wiredep": "1.2.0",
-        "gulp-wrap": "^0.13.0",
-        "handlebars": "^4.0.5",
-        "jshint": "^2.8.0",
-        "jshint-stylish": "^2.1.0",
-        "merge-stream": "^1.0.0",
-        "rename": "^1.0.3",
-        "stream-browserify": "^2.0.1",
-        "through2": "^2.0.0",
-        "wiredep": "^4.0.0",
-        "yargs": "^10.0.3"
-    },
-    "dependencies": {
-        "gulp-load-plugins": "^1.1.0",
-        "npm": "^5.5.1",
-        "office-ui-fabric-core": "^9.1.0"
-    }
+  "name": "simplestyle",
+  "version": "0.0.1",
+  "description": "Simple Style Guide Tool based on Atomic Web Design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "gulp gen:config && node -e \"try { require('fs').symlinkSync(require('path').resolve('node_modules/@bower_components'), 'bower_components', 'junction') } catch (e) { }\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StfBauer/SimpleStyle.git"
+  },
+  "keywords": [
+    "Atomic",
+    "Design",
+    "Style",
+    "Guide",
+    "Web",
+    "Desgin",
+    "Pattern",
+    "UI",
+    "UX"
+  ],
+  "author": "Stefan Bauer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StfBauer/SimpleStyle/issues"
+  },
+  "homepage": "https://github.com/StfBauer/SimpleStyle#readme",
+  "devDependencies": {
+    "browser-sync": "^2.10.1",
+    "chalk": "^2.3.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-declare": "^0.3.0",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-if": "^2.0.0",
+    "gulp-inject": "^4.1.0",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-merge": "^0.1.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-print": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "gulp-wiredep": "1.2.0",
+    "gulp-wrap": "^0.13.0",
+    "handlebars": "^4.0.5",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.1.0",
+    "merge-stream": "^1.0.0",
+    "rename": "^1.0.3",
+    "stream-browserify": "^2.0.1",
+    "through2": "^2.0.0",
+    "wiredep": "^4.0.0",
+    "yargs": "^10.0.3"
+  },
+  "dependencies": {
+    "gulp-load-plugins": "^1.1.0",
+    "npm": "^5.5.1",
+    "office-ui-fabric-core": "^9.1.0",
+    "@bower_components/handlebars": "components/handlebars.js#~4.0.5",
+    "@bower_components/modernizer": "askhogan/Modernizr#~2.8.2",
+    "@bower_components/prism": "LeaVerou/prism#^1.5.1"
+  },
+  "engines": {
+    "yarn": ">= 1.0.0"
+  }
 }
